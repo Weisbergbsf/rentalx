@@ -2,8 +2,11 @@
     "compilerOptions": {
         "target": "es5",
         "module": "CommonJS",
+        "rootDir": "./",
+        "baseUrl": "./src",
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
     }
 }
