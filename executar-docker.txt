@@ -1,0 +1,23 @@
+Criar a imagem:
+> docker build -t rentx .
+
+Rodar a imagem:
+> docker run -p 3333:3333 rentx
+
+Subir imagem:
+> docker-compose up --force-recreate -d
+
+Ecessar o container:
+> docker exec -it rentx /bin/bash
+
+Log:
+> docker logs rentx -f
+
+Verifiar IP do container:
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' rentx
+docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' database_ignite
+
+OU
+
+docker exec rentx cat /etc/hosts
+docker exec database_ignite cat /etc/hosts

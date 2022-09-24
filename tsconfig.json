@@ -1,12 +1,21 @@
 {
+  "compilerOptions": {
+    "target": "es5",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "ts-node": {
     "compilerOptions": {
-        "target": "es5",
-        "module": "CommonJS",
-        "rootDir": "./",
-        "baseUrl": "./src",
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": true
+      "module": "CommonJS"
     }
+  }
 }
